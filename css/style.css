@@ -32,17 +32,6 @@ body {
     outline: 0;
     text-decoration: none;
     box-sizing: border-box;
-    cursor: none;
-}
-
-.custom-cursor {
-    width: 15px;
-    height: 15px;
-    background-color: var(--skin-color);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
 }
 
 ::before,
@@ -261,7 +250,7 @@ ul {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
-    /*cursor: pointer;*/
+    cursor: pointer;
     position: fixed;
     left: 300px;
     top: 20px;
@@ -724,7 +713,7 @@ h3.my-profession {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
@@ -901,23 +890,4 @@ h3.my-profession {
         max-width: 100%;
 
     }
-}
-
-
-
-/* Algemene stijl voor de verticale scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Achtergrond van de scrollbar */
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-/* Scrollbar zelf */
-::-webkit-scrollbar-thumb {
-    background-color: var(--skin-color);
-    border-radius: 6px;
-    border: 3px solid var(--skin-color);
 }
