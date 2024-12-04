@@ -891,3 +891,19 @@ h3.my-profession {
 
     }
 }
+
+/* Algemene stijl voor de verticale scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Achtergrond van de scrollbar */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Scrollbar zelf */
+::-webkit-scrollbar-thumb {
+    background-color: var(--skin-color);
+    border-radius: 5px;
+}
