@@ -155,6 +155,7 @@ ul {
     border-radius: 40px;
     display: inline-block;
     white-space: nowrap;
+    cursor: pointer;
     border: none;
     background: var(--skin-color);
     transition: all 0.3 ease;
@@ -162,6 +163,7 @@ ul {
 
 .btn:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .shadow-dark {
