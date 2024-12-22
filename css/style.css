@@ -819,6 +819,12 @@ h3.my-profession {
 }
 
 
+.website-link {
+    color: var(--text-black-700);
+    text-decoration: underline;
+}
+
+
 @media (max-width: 1199px) {
     .section .container {
         padding-top: 70px;
