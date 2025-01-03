@@ -536,6 +536,9 @@ h3.my-profession {
     line-height: 40px;
 }
 
+
+
+
 .about .about-content .education,
 .about .about-content .experience {
     flex: 0 0 59%;
@@ -825,6 +828,23 @@ h3.my-profession {
     color: var(--text-black-700);
     text-decoration: underline;
 }
+
+
+/* Start met een verborgen toestand */
+.lazy-load {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+}
+
+/* Wanneer zichtbaar in beeld */
+.lazy-load.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
 
 
 @media (max-width: 1199px) {

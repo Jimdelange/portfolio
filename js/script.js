@@ -1,5 +1,5 @@
 var typed = new Typed('.typing', {
-    strings: ["", "Web Developer", "Student", "Software Developer"],
+    strings: ["","Web Developer", "Student", "Software Developer"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
@@ -86,4 +86,27 @@ document.addEventListener("mousemove", function(e) {
     const cursor = document.querySelector(".custom-cursor");
     cursor.style.left = e.pageX + "px";
     cursor.style.top = e.pageY + "px";
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const lazyElements = document.querySelectorAll(".lazy-load");
+
+    const observer = new IntersectionObserver(
+        (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Stop observeren na laden
+                }
+            });
+        },
+        { threshold: 0.1 } // Activeer als 10% van het element zichtbaar is
+    );
+
+    lazyElements.forEach((element) => {
+        observer.observe(element);
+    });
 });
