@@ -6,7 +6,8 @@ styleSwitcherToggle.addEventListener('click', () => {
 
 
 window.addEventListener('scroll', () => {
-    if(document.querySelector('.style-switcher').classList.contains('open')){
+    if(document.querySelector('.style-switcher').classList.contains('open'))
+    {
         document.querySelector('.style-switcher').classList.remove('open');
     }
 })
