@@ -727,6 +727,15 @@ h3.my-profession {
 
 }
 
+.portfolio-item img {
+    transition: all 0.4s ease;
+}
+
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
 
 .contact-title {
     color: var(--skin-color);
@@ -830,14 +839,14 @@ h3.my-profession {
 }
 
 
-/* Start met een verborgen toestand */
+
 .lazy-load {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-/* Wanneer zichtbaar in beeld */
+
 .lazy-load.visible {
     opacity: 1;
     transform: translateY(0);
